@@ -1,0 +1,114 @@
+.App {
+  display: flex;
+
+  &__sideBar {
+    display: flex;
+    max-width: 150px;
+  }
+
+  &__outlet {
+    display: flex;
+    flex: 1;
+  }
+}
+
+.Outlet {
+  width: 100%;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    &-img {
+      width: 310px;
+      height: 122px;
+      object-fit: contain;
+    }
+  }
+
+  &__header {
+    padding: 12px 80px;
+  }
+
+  &__posts {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+  }
+
+  &__description {
+    background-color: #e6e6e6;
+    &-title {
+      display: flex;
+      justify-content: center;
+      padding: 16px 0;
+      font-weight: bold;
+    }
+
+    &-content {
+      display: flex;
+      justify-content: center;
+      padding: 0 180px 20px 180px;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    padding: 0 80px;
+    margin-bottom: 50px;
+  }
+
+  &__footer {
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-top: 1px solid #dedede;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Outlet {
+    &__header {
+      padding: 16px 16px;
+    }
+
+    &__description-content {
+      padding: 0px 20px 16px 20px;
+    }
+
+    &__content {
+      padding: 16px 16px;
+    }
+
+    &__footer {
+      padding: 16px 16px;
+    }
+
+    &__posts {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    position: relative;
+  }
+  .Outlet {
+    margin-top: 92px;
+    &__header {
+      padding: 16px 0;
+    }
+
+    &__description-content {
+      padding: 0px 16px 0;
+    }
+
+    &__content {
+      padding: 16px 4px;
+    }
+
+    &__footer {
+      padding: 4px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.PostItem {
+  &__title {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  &__desc-hide {
+    display: none;
+  }
+
+  &__content {
+    display: flex;
+  }
+}
+
+@media (max-width: 1024px) {
+  .PostItem {
+    &__desc-hide {
+      display: contents;
+    }
+
+    &__desc-more {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .PostItem {
+    &__img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+    &__content {
+      display: block;
+    }
+  }
+}
