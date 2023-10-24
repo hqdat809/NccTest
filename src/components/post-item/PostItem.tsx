@@ -18,20 +18,17 @@ const PostItem = ({ img }: IPostItemProps) => {
           sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit
           accumsan. Aenean consequat condimentum velit ut tempor. Nam porta
           massa in metus bibendum congue. Pellentesque ultrices liquam egestas
-          nunc at{" "}
-          <a className="PostItem__desc-hide">
-            ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est
-            ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam
-            porta massa in metus bibendum congue. Pellentesque ultrices
-            vestibulum mattis.
-          </a>
+          nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales
+          est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam
+          porta massa in metus bibendum congue. Pellentesque ultrices vestibulum
+          mattis.
         </div>
       </div>
-      <div className="PostItem__desc-more">
+      {/* <div className="PostItem__desc-more">
         ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est
         ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta
         massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.
-      </div>
+      </div> */}
     </div>
   );
 };
